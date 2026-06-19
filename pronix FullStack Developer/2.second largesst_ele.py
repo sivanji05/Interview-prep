@@ -32,7 +32,8 @@ def sec_lar(l):
             sec_lar=i
     return sec_lar
 
-l=[1,2,6,7,8,19,10,4,31,3,3]
+# l=[1,2,6,7,8,19,10,4,31,3,3]
+l= list(map(int, input().split()))
 print(sec_lar(l))     
 
 

@@ -24,7 +24,7 @@ def count_frq(list):
             dict[i]=1
     return dict
 
-list=[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,1,2,3,4,1,2,3,1,2,1]
+list=[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8]
 c=count_frq(list)
 #print(c)
 for i in c:
@@ -40,4 +40,4 @@ for i in c:
 # print('max element:',max_ele)
 # print('max value:',max_value)
 
-
+    

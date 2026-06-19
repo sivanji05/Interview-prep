@@ -26,7 +26,7 @@ def rev(s):
     else:
         return False
 
-s="madam"
+s=input("enter the string:")
 revs=rev(s) 
 print(revs)
 
@@ -39,10 +39,6 @@ print(revs)
 #     print("palindrome")
 # else:
 #     print("not palindrome")
-
-
-
-
 
 
 

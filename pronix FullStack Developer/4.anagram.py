@@ -45,7 +45,6 @@ def check(s1,s2):
             dict1[i]=1
     for i in s2:
         if i in dict2:
-            
             dict2[i]+=1
         else:
             dict2[i]=1

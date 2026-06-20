@@ -1,0 +1,189 @@
+Good _______, everyone!
+
+My name is Sivanji. I’m from Vinukonda,
+
+I completed my bacholer's degree in Computer Science and Artificial Intelligence from KKR & KSR Institute of Technology and Sciences, as part of the 2024 batch.
+
+I came from a small family. My parents are farmers, and I have two older brothers.
+
+I completed an internship with BasketHunt Pvt. Ltd. as an IT and Web Development Intern.
+
+I have worked on two projects. The first was DeepQuest, a deep learning project focused on generating contextually relevant question papers. The second was an Agricultural Crop Recommendation System.
+
+I have a strong background in python fullstack. my key skills including "python, Django, DRF, html, css, javascript, machine learning.  
+I am proficient in data bases with "MySQL, MongoDB". 
+
+My strengths include being eager to learn new things, adaptable to any situation, and self-motivated. 
+my short term goal is to get a job in reputated company.
+my long term goal is to achive challenging position where i am working on the organization and improve my professional skills.
+
+That’s all about me.   Thank you for the opportunity!
+
+
+                       --------------------------------                 ------------------------------------------
+
+
+
+
+
+Projects :-
+
+DeepQuest: A Deep Learning Approach to Contextually Relevant Question Generation:
+
+1.The main theme of this project is to automatically generate question papers based on input provided by the user.
+
+2.The input can be gathered from textbooks, study materials, and other educational resources.
+
+3.This project utilizes NLTK (Natural Language Toolkit) along with machine learning algorithms.
+
+4.The algorithm used is a traditional rule-based approach.
+
+5.Flask is used as the framework for the user interface, allowing users to interact easily with the system.
+
+6.The output is generated in PDF format.
+
+
+Tools/Modules:
+
+	1.NLTK
+	2.Flask (Optional: Django)
+	3.PDF Generation
+	4.VS Code
+
+
+
+
+                    -------------------------              -------------------------------------
+
+Agricultural Crop Recommendation System.
+
+1.This project aims to recommend the best crop based on factors such as soil properties, rainfall, and humidity.
+
+2.We use a machine learning algorithm, specifically a decision tree, to make crop recommendations.
+
+3.The Flask framework is used to create the user interface.
+
+4. Additionally, the system recommends the best fertilizers for higher yield.
+
+
+Tools/modules:
+
+	1.Decision Tree 
+	2.Pandas, NumPy
+	3.Rule-Based   - for fetillizer recommandation 
+	4.Flask
+	5.VS Code, PyCharm,
+
+
+
+
+		--------------------    ------------------------
+
+
+
+DocuMind — Intelligent Document Query Platform
+FastAPI, LangChain, Autogen,React.js, TailwindCSS, PostgreSQL, AWS S3, Elasticsearch, unstructured.io, Auth JWT, Docker   |   June 2025
+• Development :-
+    • Developed a full-stack document intelligence platform enabling users to upload, parse, and query documents (PDF, PPT, CSV) using advanced NLP with RAG (Retrieval-Augmented Generation).
+    • Engineered a scalable React.js + TailwindCSS frontend with a seamless UI for document upload, query, and user interaction.
+
+    • Built a robust FastAPI backend integrating LangChain, unstructured.io, Elasticsearch for intelligent document search and Q&A.
+    • Implemented secure file handling using AWS S3 for storage and PostgreSQL for metadata management.
+    • Designed and deployed document parsing pipelines via unstructured.io for accurate content extraction and chunking.
+    • Managed user authentication via JWT/session-based auth, securing API routes and sessions.
+    • Deployed scalable services using Docker and docker-compose, enabling smooth local and cloud deployment.
+    •Structured code into modular services (parsing, storage, auth, RAG) ensuring clean architecture and maintainability.
+
+
+
+
+			------------------------------ 		----------------------------------------------
+
+Book Your Seat
+
+
+◦ Developed an online full stack bus seat booking system for users to view available buses and book seats.
+◦ Developed secure login and token-based authentication.
+◦ Created a user dashboard to manage and view booking history.
+◦ Integrated frontend and backend with RESTful APIs for seamless interaction
+
+
+Tools: 
+	React.js, Django, MySQL, RESTful APIs,Git
+
+
+	-------------------------------------------- 		-------------------------------------------
+
+
+
+
+
+
+, 
+
+
+
+You should hire me because I bring a rare mix of full-stack development skills (Python, Django, React, REST APIs) and 
+hands-on AI/LLM integration experience, allowing me to build not just scalable applications but also next-gen intelligent solutions that most developers can’t.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from nltk.tokenize import word_tokenize
+
+text='kjefbhrjbfjbfhjbfjkewbfjhbfhjerfbhjebf'
+print(word_tokenize(text))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

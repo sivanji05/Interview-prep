@@ -1,0 +1,189 @@
+★. Project Setup (Django Apps, Settings, Configurations)__________________
+
+
+   1.What is Django?
+
+A: 	Django is a high-level Python web framework that follows the Model-View-Template (MVT) architectural pattern. It is designed to help developers build web applications quickly and efficiently by providing reusable components.
+
+	Key Components of a Django Project
+	        -Project: A collection of settings and configurations for a Django web application.
+		-App: A modular componend of a Django project that handles specific functionalities (e.g., user authentication, blog posts).
+		-Settings: Configuration settings for the Django project, including database settings, middleware, installed applications, and static file handling.
+		-URLs: Django’s URL dispatcher maps URLs to corresponding views.
+
+   2.Steps to Set Up a Django Project
+ A:	
+	- Install Django
+	- Create a Django project
+	- Create an app within the project
+	- Configure settings, including database connections
+	- Run the development server
+
+
+★. Models, Migrations, and Database Interaction (ORM)_______________________
+
+
+       3.What is a Model?
+
+     A:		A model is a Python class that defines the structure of a database table. It includes fields (columns) and behaviors (methods).
+
+
+
+       4.What is Django ORM?
+	
+	A:	The Object-Relational Mapper (ORM) allows interaction with the database using Python code instead of writing SQL queries.
+
+       
+       5.Migrations in Django
+
+     A:		Migrations are a way to track changes in models and apply them to the database.
+
+		-makemigrations generates migration files.
+		-migrate applies migrations to the database.
+
+
+★. Views and URL Routing____________
+
+
+   6.What is a View?
+	
+    A:	A view is a Python function or class that handles HTTP requests and returns an HTTP response.
+
+	Types of Views:
+
+	- Function-based views (FBVs) – Simple functions handling requests.
+	- Class-based views (CBVs) – Object-oriented views that provide reusable behaviors.
+
+    7.URL Routing
+
+     A: 	Django uses urls.py to map URLs to views.
+	        Uses path() or re_path() functions for routing.
+
+
+★. Templates and Template Inheritance________________________
+
+
+     8.What is a Template?
+
+    A:		A template is an HTML file with Django Template Language (DTL) to display dynamic data.
+
+     9.Template Inheritance
+
+	A:	Allows reusability of HTML structure using {% extends %} and {% block %}.
+		A base template (base.html) defines a common layout for all pages.
+		Django Template Language (DTL)
+		Variables: {{ variable_name }}
+		Loops: {% for item in items %} ... {% endfor %}
+		Conditionals: {% if condition %} ... {% endif %}
+
+
+
+
+★. Forms and Validation
+
+	10.What are Django Forms?
+
+	A:	Django provides a forms module to create and handle HTML forms in an easy and secure way.
+
+	 Form Handling Process
+	Display an HTML form to the user.
+	Validate input data on form submission.
+	Process valid data (store in a database or perform other actions).
+	Display error messages for invalid inputs.
+	Form Validation
+	Django automatically validates form fields (e.g., required fields, email format).
+	Custom validation can be implemented using clean() methods in the form class.
+
+
+★. Authentication and Authorization
+
+
+     11.What is Authentication?
+  A:
+	Authentication is the process of verifying user identity (e.g., login using a username and password). Django provides a built-in authentication system.
+
+    
+      12.What is Authorization?
+     A:
+	Authorization determines what actions an authenticated user can perform (e.g., restricting access to certain pages).
+
+    
+      13.Django Authentication System Features
+    A:
+	- User model – Handles user-related data (username, password, email).
+	- Authentication views – Login, logout, password reset.
+	- Permissions and groups – Restrict access to specific views or models.
+	- Middleware – Automatically manages user sessions.
+	- Restricting Access
+	- @login_required decorator ensures only logged-in users can access a view.
+	- Permissions can be managed using Django’s permissions framework.
+
+
+★. Middlewares 
+
+	14.what is the use of middlewares
+	A:
+	
+	Middleware is a layer of hooks that allows you to process:
+
+	-before it reaches the view
+
+	- Response before it's sent to the client
+
+	It acts like a layer between the request and response in the Django lifecycle.
+
+★. REST APIs with Django REST Framework (DRF) 
+
+  	15.What is REST API?
+    A:
+	A RESTful API is a web service that follows REST principles, allowing communication between applications using HTTP requests (GET, POST, PUT, DELETE).
+
+
+	16.What is Django REST Framework (DRF)?
+     A:
+
+	Django REST Framework (DRF) is a library that simplifies the creation of REST APIs in Django.
+
+	Key Components of DRF:
+
+	- Serializers – Convert Django models into JSON format.
+	- API Views – Handle API requests and responses.
+	- Authentication – Supports various authentication methods (Token, JWT).
+	
+	REST API Workflow:
+
+	- A client (e.g., frontend, mobile app) sends an HTTP request to the API.
+	- Django processes the request and interacts with the database.
+	- The API returns a response (usually in JSON format).
+
+
+
+
+★  Extra Questions
+
+	17. what is query set ?
+      A:
+		
+	A QuerySet in Django represents a collection of database queries that retrieve objects from the database.
+        It is a way to interact with your database tables using Python objects instead of raw SQL.
+
+	18. what is the signals in Django?
+     A:
+	In Django, signals are a way to allow certain senders to notify a set of receivers when an action occurs.
+        This allows you to decouple your application logic, making your code modular and responsive to events.
+
+
+	19.What is the difference between filter(), get(), and exclude() in QuerySets?
+    A:
+
+
+	| Method      | Purpose                                                     | Return Type             |
+	| ----------- | ----------------------------------------------------------- | ----------------------- |
+	| `filter()`  | Get **all objects matching the condition(s).**              | QuerySet (can be empty) |
+	| `get()`     | Get **exactly one object matching the condition.**          | Single object or error  |
+	| `exclude()` | Get **all objects that do **NOT** match the condition(s).** | QuerySet                |
+
+
+
+
+

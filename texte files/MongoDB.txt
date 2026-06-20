@@ -1,0 +1,226 @@
+------------------------mongo DB-----------------------------
+
+
+         	mongo DB____					my SQL____
+
+	1.databsae					1.database
+	2.collections					2.tables
+	3.docments					3.rows
+	4.fields					4.column
+
+
+
+
+Data base Commands
+
+1.view all databases                    	 ---->   show dbs
+
+
+2.create a new or switch databases 		----->	use dbName
+
+3.view current database				----->	db
+
+4.delet databse					----->	db.dropDatabse()
+
+
+
+----------collection commads---------------------------
+
+
+5.show collections				----->	show collections
+
+6.create collection named 'comments'		----->	db.createCollection('comments')
+
+7.drop a collections named('comments')		----->	db.comments.drop()
+
+
+
+
+
+-----------CURD operations --------------------------
+
+
+1. insert one row 			------> db.collectionName.insert({
+						show db		           'name':'sivanji',
+					   				   'age':'20',
+									  'course':'B.Tech'
+											})
+
+
+
+2.insert many rows			----->	db.collectionName.insertMany([
+								         {'name':'venkat',
+					   				   'age':'25',
+									  'course':'B.Tech',
+									'branch':'CAI'
+
+									},
+
+								         {'name':'murali',
+					   				   'age':'22',
+									  'course':'B.Tech',
+									'branch':'CAI'
+
+									}])	
+
+
+
+3.search in a mongodb database 		------>   db.colletionName.find({name:'sivanji'})
+
+
+4.search in a mongodb database with limit ---->	db.collections.find().limit(2)
+
+ 		
+5.count the no of rows in the output	----->	   db.collectionName.countDocuments()
+
+
+6.update a single row 			----->	  db.collectionname.update({name:murali},
+										{$set{name:abid,
+										age:'22',
+										course:'B.Tech',
+										branch:'CAI'}},{upsert:true})
+
+
+ 7.update a single row 			----->	db.collectionname.updateMany({},
+										{$set{name:abid,
+										age:'22',
+										course:'B.Tech',
+										branch:'CAI'}},{upsert:true})
+
+
+        
+
+8. increment operator		   	----->	db.collectionName.update({name:'venkat'},{$ins:{age:5})
+
+
+
+9. Rename operator			----->	db.collectionName.update({name:'akshay'},
+									{$rename:{coures:'programme'})
+
+
+
+10.delete a row 				---->	db.collectionName.remove({name:'murali'})
+
+
+11.show all rows in a collection       ----->	db.collectionName.find()
+
+
+
+--------Mongo Db Aggrigation Functions----------
+
+1.
+
+
+
+--------------------------------------------------------------xxxxxxxxxxxxx-----------------------------------------	
+
+
+
+)What is MongoDB?
+A:
+	MongoDB is a NoSQL database that stores data in JSON-like documents with dynamic schemas, making it highly flexible and scalable.
+
+)How is MongoDB different from SQL databases?
+A:
+	SQL databases store data in tables with rows and columns (structured), while MongoDB stores data in collections of flexible JSON-like documents (unstructured).
+
+)What are the key features of MongoDB?
+A:
+
+	-Schema-less (Flexible documents).
+	-Scalability (Horizontal scaling with sharding).
+	-High Performance (Indexing & Aggregation).
+	-Replication & Fault Tolerance (Replica sets).
+
+)What is a Document in MongoDB?
+A:
+	A document is a JSON-like object stored in a collection, similar to a row in an SQL table.
+
+
+)What is a Collection in MongoDB?
+A:
+	A collection is a group of documents, similar to a table in SQL databases.
+
+)How do you insert a document in MongoDB?
+A:
+	db.users.insertOne({ name: "Sivanji", age: 21, city: "Hyderabad" })
+
+)How do you insert multiple documents?
+A:
+	db.users.insertMany([
+    	{ name: "Bob", age: 30 },
+    	{ name: "Charlie", age: 28}])
+
+)How do you retrieve all documents from a collection?
+A:
+	db.users.find()
+
+)How do you retrieve documents with a condition?
+A:
+	db.users.find({ age: { $gt: 25 } })  -> Users with age > 25
+
+)How do you update a document in MongoDB?
+A:
+	db.users.updateOne({ name: "Alice" }, { $set: { age: 26 } })
+
+)How do you delete a document?
+A:
+	db.users.deleteOne({ name: "Alice" })
+
+)What is the difference between find() and findOne()?
+A:
+	- find() returns multiple documents.
+	- findOne() returns only the first matching document
+
+
+
+)What are some commonly used query operators in MongoDB?
+A:
+	- $eq → Equal
+	- $gt / $lt → Greater / Less than
+	- $in → Matches any value in an array
+	- $regex → Pattern matching
+
+)How do you use the $in operator in MongoDB?
+A:
+	db.users.find({ city: { $in: ["New York", "Los Angeles"] } })
+
+)How do you sort query results in MongoDB?
+A:
+	db.users.find().sort({ age: -1 }) // Sort by age in descending order
+
+)How do you limit the number of documents returned?
+A:
+	db.users.find().limit(5) // Get only 5 results
+
+
+)What are indexes in MongoDB?
+A:
+	Indexes improve query performance by allowing faster lookups.
+
+)How do you create an index in MongoDB?
+A
+	db.users.createIndex({ name: 1 }) // 1 for ascending, -1 for descending
+
+)What is the _id field in MongoDB?
+A;
+	_id is a unique identifier assigned to each document automatically.
+
+)Can you have multiple indexes on a collection?
+A:
+	Yes, you can create multiple indexes for different fields.
+
+)What is a Compound Index?
+A:
+	A compound index is an index on multiple fields to improve performance.  ->db.users.createIndex({ name: 1, age: -1 })
+
+
+
+
+
+
+
+
+
+
+

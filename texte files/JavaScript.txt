@@ -1,0 +1,221 @@
+1.what is JavaScript ?
+A:
+	1.JavaScript is a high level programming language used primarily to create interactive and dynamic content on websites.
+
+	2. it is commonly used for web and mobile application's. 
+	3. it is client side programming language. runs in the user's web browser.
+
+.What are the different data types in JavaScript?
+
+A:
+	primitive - String, Number, BigInt, Boolean, Undefind, Null, symbol.
+
+	Non-Primitive - Object, Array, Function
+
+
+
+.What is the difference between var, let, and const?
+A:
+	var:
+		- Function-scoped : Accessible within the function it's declared in.
+
+		- Hosting is possible and they are initialized with undefined until the line of declaration is executed.
+		- var allows both reassignment and redeclaration within the same scope.
+
+	let:
+		- let declarations are block-scoped.
+		- let declarations are hoisted to the top of their block but are not initialized
+		- let allows reassignment but does not allow redeclaration within the same block scope.
+	
+	const:
+		- const declarations are also block-scoped, similar to let.
+		- const declarations are hoisted but not initialized
+		- const variables must be initialized at the time of declaration and cannot be reassigned afterward.
+
+
+.What is Hoisting in JavaScript?
+A:
+	Hoisting is JavaScript's default behavior of moving declarations (not initializations) to the top of the current scope.
+
+	Ex:
+		sayHello(); // Output: Hello!
+
+		function sayHello() {
+ 		console.log("Hello!");
+		}
+
+.Explain the difference between == and ===?
+A:
+	== (Loose Equality):
+  	-Compares values after converting them to the same type.
+
+   	-It's more flexible but can lead to unexpected results.
+
+
+	 === (Strict Equality):
+	
+	- Compares both value and type.
+
+	- No type conversion is done. It's stricter and more predictable.
+
+ 
+.What are truthy and falsy values in JavaScript?
+A:	
+      - Falsy Values: These are values that evaluate to false when converted to a Boolean.
+	
+		ex: false,0, "",null, undefind, NaN
+
+       - Truthy Values : Everything not falsy is considered truthy.
+
+		ex: 23,"siva",objects,functions,dates.
+ 
+.What is the difference between null and undefined?
+A:
+	null and undefined both represent the absence of a value, but they are different in meaning and usage.
+	
+	- undefined: Means a variable has been declared but not assigned a value.
+	
+	- null An intentional assignment representing no value or empty.
+
+
+.What is a closure?
+A:
+
+	A closure in JavaScript is a function that remembers the variables from its lexical scope, even when the function is executed outside that scope.
+
+
+.What is the purpose of the typeof operator?
+A:
+	
+	The typeof operator in JavaScript is used to determine the type of a value or variable. It returns a string indicating the data type.
+
+
+
+. what is the template literals?
+A:
+	Template literals (also known as template strings) are a feature in JavaScript that make it easier to work with strings like 
+	- insert variables or expression into a string
+	- template literals enclosed by backticks(``), and ${}.   (//same f-string in python)
+
+
+
+
+
+.What is the difference between function declarations and function expressions?
+A:
+     - Function Declaration:
+
+	A function declaration defines a function with the function keyword at the top level of code.
+
+     - Function Expression:
+
+	A function expression is when a function is assigned to a variable. It can be named or anonymous.
+
+
+.What is the scope of a variable in JavaScript?
+A:
+
+| Scope Type     | Where It's Accessible                      | Declared With         |
+| -------------- | ------------------------------------------ | --------------------- |
+| Global Scope   | Anywhere in the file (or window)           | `var`, `let`, `const` |
+| Function Scope | Inside the function where declared         | `var`, `let`, `const` |
+| Block Scope    | Inside the `{}` block where declared       | `let`, `const`        |
+| Lexical Scope  | Inner functions accessing parent variables | All declarations      |
+
+
+
+.Explain event bubbling and event capturing.
+A:
+	Event Capturing : The event starts from the root of the DOM tree and travels downward to the target element( document -> parent->target).
+	
+	Event Bubbling : After reaching the target element, the event bubbles back up to the top (from target → parents → document).
+
+
+
+.What is the event loop in JavaScript?
+A: 
+	The event loop in JavaScript is a core concept that explains how JavaScript handles asynchronous operations — like setTimeout, fetch, promises, and event handlers — while still running in a single thread.
+
+
+.What are promises, and how do they work?
+A:
+
+	A Promise is a built-in JavaScript object that represents the eventual result (or failure) of an asynchronous operation.
+
+	| State       | Description                      |
+	| ----------- | -------------------------------- |
+	| `pending`   | Initial state, still running     |
+	| `fulfilled` | Operation completed successfully |
+	| `rejected`  | Operation failed with an error   |
+
+
+
+.Explain async/await.
+A:
+	async Keyword:
+
+	- Used before a function to declare it as asynchronous.
+
+	- Automatically makes the function return a Promise.
+
+	
+	await Keyword:
+
+	- Can only be used inside an async function.
+
+	- Pauses execution until the Promise is resolved or rejected.
+
+	- Makes asynchronous code behave like synchronous code.
+
+
+.What is a callback function?
+A:
+	A callback is a function passed as an argument to another function. 
+	This technique allows a function to call another function.
+	A callback function can run after another function has finished.
+
+
+.What Are Arrow Functions in JavaScript?
+A:
+     Arrow functions are a shorter way to write functions in JavaScript, introduced in ES6.
+
+
+	ex: Normal Function__				arrow FUnction EX:
+		function add(a,b){			
+			return a+b;			const add = (a,b)=>a+b;
+		}
+		add();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

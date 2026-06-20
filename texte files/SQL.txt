@@ -1,0 +1,232 @@
+--------SQL----------------------------
+1)What is DBMS? Explain types of DBMS.
+A:
+
+     -DBMS is software that interacts with users, applications, and the database itself to capture and analyze the data. 
+     -It is a structured collection of data. 
+    There are two types of DBMS.
+ 
+	1.Relational DBMS_____							2.Non – Relational DBMS____
+	data stored in tables(structured)					data stored in docment orieanted.
+	table consist of tuples and attributes					 data in  laundry list order
+
+
+
+2)what is sql?
+A:
+
+	-SQL, which stands for Structured Query Language, is a specialized programming language designed for managing and interacting with relational databases.
+        -Relational databases organize data into structured tables with rows and columns.
+
+
+3) SQL-supported programming?
+A:
+    SQL is a command-based programming language but it doesn’t contain any control flow statements.
+
+
+4)Explain the different types of SQL commands?
+A:
+		DDL__			DML__			 DCL__			 DQL__			TCL__
+
+		1.Create 		1.INSERT		1.Grant			1.Select		1.commit
+		2.Alter			2.UPDATE		2.revoke					2.roll back
+		3.Rename		3.DELETE
+		4.truncate
+		5.drop
+
+
+5)Explain  types of SQL commands in detail?	
+A:
+       ◦Data Definition Language: -> Defines and modifies the database structure.
+
+			•CREATE	:-Creates a new database, table, index, or view.   -> Example: CREATE TABLE students (id INT, name VARCHAR(50));
+
+			•ALTER	:- Modifies an existing database object, such as adding or dropping columns in a table.   ->Example: ALTER TABLE students ADD COLUMN age INT;
+
+			•RENAME	:- Renames a table or a column.     ->Example: RENAME TABLE old_table TO new_table;
+
+			•TRUNCATE :- Removes all rows from a table, but the table structure remains intact.     -> Example: TRUNCATE TABLE students;
+
+			•Drop	:- Deletes the entire table or database structure.    -> Example:  DROP TABLE employees;
+	
+	◦Data Manipulation  Language:  ->Manages and manipulates data.
+
+			•INSERT	:- Adds new records to a table.    -> Example: INSERT INTO students (id, name) VALUES (1, 'John');
+
+			•UPDATE	:- Modifies existing records in a table.    -> Example: UPDATE students SET name = 'Jane' WHERE id = 1;
+
+			•DELETE	:- Removes records from a table based on a condition.   -> Example: DELETE FROM students WHERE id = 1;
+
+	◦Data Control Language : Controls access to the database.
+
+			•GRANT	:- Gives specific privileges to a user.   -> Example: GRANT SELECT, INSERT ON database_name.* TO 'username'@'localhost';
+
+			•REVOKE	:- Removes specific privileges from a user.    -> Example: REVOKE SELECT ON database_name.* FROM 'username'@'localhost';
+	
+	◦Data Query Language : Retrieves data using queries.
+			
+			•SELECT	:- Retrieves data from one or more tables. Example: SELECT * FROM students;
+
+	◦Transaction Control Language :Manages transactions to ensure data consistency.
+
+			•COMMIT	:- Saves the changes made by the transaction permanently.   -> Example: COMMIT;
+			•ROLLBACK  :- Reverts the changes made by the current transaction.  -> Example: ROLLBACK;
+
+
+6) What is the WHERE,ORDER BY,GROUP BY clause used for?
+A: 
+	- WHERE clause It filters records based on specified conditions.
+
+	- ORDER BY clause : It sorts the result set in ascending (ASC) or descending (DESC) order.
+
+	- GROUP BY clause : It groups rows with the same values into summary rows.
+
+
+
+7)what are the Constraints ?
+A: 
+	The following constraints are commonly used in SQL:
+
+	-NOT NULL  	:- Ensures that a column cannot have a NULL value
+
+	-UNIQUE  	:- Ensures that all values in a column are different
+
+	-PRIMARY KEY 	:- A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+
+	-FOREIGN KEY 	:- Prevents actions that would destroy links between tables
+
+	-CHECK		:- Ensures that the values in a column satisfies a specific condition
+
+	-DEFAULT 	:- Sets a default value for a column if no value is specified
+   
+	-CREATE INDEX 	:- Used to create and retrieve data from the database very quickly
+
+8)Differences Between DROP and TRUNCATE?
+A: 
+	- DROP: Deletes the entire table or database structure.
+
+	- TRUNCATE: Deletes all rows from a table but keeps the table structure intact.
+
+
+9) Difference between char and varchar.
+A:
+			Char____					vachar____
+		1.fixed length of char stotres 			1.variable length of char stores 
+		2.store the characters up to 255		2.stores the charaters up to 65,535.
+
+
+10)Difference Between WHERE and HAVING Clauses in SQL?
+A:
+	◦Where :- Use WHERE to filter data at the row level before any grouping.
+
+	◦HAVING to filter grouped data after using GROUP BY, often with aggregate functions.
+
+11)What are joins in SQL?
+A:
+	- the JOIN clause is used to combine rows from two or more tables, based on a related column between them. 
+	- It is used to merge two tables or retrieve data from there
+
+		-inner join       -outer join       -right join    -left join
+
+
+12)Write the Syntaxes for joins.
+A:
+	-INNER JOIN: select column_name From table1 INNER JOIN table2 on table1.column_name = table2.column_name;
+	-OUTER JOIN: select column_name From table1 OUTER JOIN table2 on table1.column_name = table2.column_name;
+	-LEFT JOIN: select column_name From table1 LEFT JOIN table2 on table1.column_name = table2.column_name;
+	-RIGHT JOIN: select column_name From table1 RIGHT JOIN table2 on table1.column_name = table2.column_name;
+	-FULL JOIN: select column_name From table1 INNER JOIN table2 on table1.column_name = table2.column_name ;
+
+13) Write the syntaxes for set operators.
+A:
+        Consider two tables T1 and T2 having attributes like id, name.
+	-UNION: select name from T1 UNION select name from T2;
+	-UNION ALL: select name from T1 UNION ALL select name from T2;
+	-INTERSECT: select name from T1 INTERSECT select name from T2;
+	-MINUS: select name from T1 MINUS select name from T2;
+
+14)Explain the LIKE operator with examples.
+A:  	
+	LIKE :- It filters data based on a pattern.
+
+	-SELECT * FROM table WHERE column LIKE 'A%'; 
+
+
+15)What is the difference between COUNT() and SUM() functions?
+A:
+	-COUNT(): Returns the number of rows.
+
+	-SUM(): Returns the sum of numeric columns.
+
+
+16)Difference between OLTP and OLAP?
+A:
+   	- OLTP: OLTP means Online Transaction Processing, it is an online database modification system. 
+	- OLAP: OLAP means Online Analytical Processing, it is an online query response system.
+
+
+17)What is a transaction? What are ACID properties?
+A:
+	Trascation :- A transaction is a sequence of operations. 
+
+	ACID ensures reliability:
+
+	-Atomicity: All or nothing.
+	-Consistency: Data remains valid.
+	-Isolation: Transactions don’t interfere.
+	-Durability: Changes are permanent.
+
+
+
+
+18)what are the Aggregation Functions in MySQL?
+A:
+	Function	Description							Example
+	---------	-----------							---------
+	COUNT()		Returns the number of rows or non-null values.		SELECT COUNT(*) FROM employees;
+
+	SUM()		Calculates the total sum of a numeric column.		SELECT SUM(salary) FROM employees;
+
+	AVG()		Calculates the average value of a numeric column.	SELECT AVG(salary) FROM employees;
+
+	MIN()		Returns the minimum value in a column.			SELECT MIN(salary) FROM employees;
+
+	MAX()		Returns the maximum value in a column.			SELECT MAX(salary) FROM employees;
+
+
+
+
+
+------IMP Pratice quations -----------
+
+19)Query to find the second-highest salary:
+
+A:	- SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);
+
+	-SELECT DISTINCT salary AS SecondHighestSalary FROM employee ORDER BY salary DESC LIMIT 1 OFFSET 1;
+
+
+20)Find duplicate records in a table:
+
+A:	- SELECT column, COUNT(*) FROM table_name GROUP BY column HAVING COUNT(*) > 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

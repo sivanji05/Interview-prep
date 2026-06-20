@@ -1,0 +1,187 @@
+------------------git---------------
+
+git                        ------> version control system
+
+repo                      --------> is nothing but a project folder name
+
+
+git stages               -------> 1. working directory   2.staging area  3.local repo  4.remote repo
+
+
+   git config --global user.name "Sivanji"
+   git config --global user.email sivanji@example.com
+
+
+0.  patch-- folder 	 			--------> where we r working 
+
+1. git initating    	 			-------->   git init 
+
+2. git  status     				-------->   displays the state of the working directory and the staging area
+
+
+3. git add <file name> 				-------->  to add particular into working directory to staging area
+
+
+3.1. git add *					-------->   add all the file  into working directory to staging area
+
+	
+4.git commit -m "Commit message"		--------> Commit changes
+
+
+5. config to git repo				--------> git remote add origin https://github.com/sivanji05/track.git
+
+6.git push -u origin master			-------->  add a file into remote repo
+
+
+7.git branch					--------> List all the branches in your repo
+
+			
+8.git checkout <branchname>			--------> Switch from one branch to another
+
+
+9.git pull					--------> Fetch and merge changes on the remote server to your working directory
+
+
+10. git clone /path/to/repository  		--------> Create a working copy of a local repository
+
+
+11.git fetch origin				--------> is used to update your local repository with the latest changes from the remote repository
+
+
+12.git merge <branchname>			--------> To merge a different branch into your active branch
+				
+
+13.git diff					--------> View all the merge conflicts
+
+
+14.git grep "foo()"				--------> Search the working directory for foo()
+
+
+15.git restore <file name>                     --------->  to remove the add files.
+
+
+16. git commit -am				---------> commit the files without staging(add).
+
+17. git log					--------->  to see the previous commits
+.
+
+
+
+ -----  git working: ----   
+
+
+	working Dir______                   	 	staging Area_______				local repo_______			 remote repo_______(GitHub)
+
+
+	pr.py		     git add  <file name>				git commit					git push
+	siva.txt      }
+				--------->	   	pr.py			-------->			pr.py		------->		pr.py
+
+
+
+
+)What is Git?
+
+A:
+	Git is a distributed version control system used for tracking changes in source code during software development.
+
+
+)What are the differences between Git and GitHub?
+
+A:
+	Git is a version control system, while GitHub is a cloud-based hosting service for Git repositories.
+
+)What is a repository in Git?
+A:
+	A repository (repo) is a directory that contains all project files and the entire history of changes.
+
+)How do you create a Git repository?
+A:
+	-git init    ->This initializes a new Git repository in the current directory.
+
+
+)How do you clone a repository?
+A:
+	git clone <repository_url>   ->This copies an existing repository from a remote source.
+
+
+)What is the difference between git pull and git fetch?
+A:
+	- git fetch downloads changes but does not merge them.
+	- git pull fetches changes and automatically merges them.
+
+
+)How do you check the status of your repository?
+A:
+	git status   ->Shows modified files, staged changes, and untracked files.
+
+
+)How do you stage changes for a commit?
+A:
+	git add <filename>    ->This moves changes to the staging area.
+
+
+
+)How do you commit changes?
+A:
+	git commit -m "Your commit message   -> "This saves the staged changes to the local repository.
+
+)How do you check commit history?
+A:
+	git log    ->Shows a list of previous commits.
+
+
+)What is the difference between git merge and git rebase?
+A:
+	- git merge creates a new merge commit, preserving history.
+	- git rebase rewrites commit history by moving changes to a new base.
+
+
+)What are Git branches?
+A:
+	A branch is an independent line of development. The default branch in Git is usually main or master.
+
+)How do you create and switch to a new branch?
+A:
+	git checkout -b new-branch    ->This creates and moves to the new-branch.
+
+
+
+)How do you delete a branch?
+A:
+
+	- git branch -d branch-name              # Deletes a local branch
+	- git push origin --delete branch-name   # Deletes a remote branch
+
+)What is the .gitignore file?
+A:
+	It specifies files and directories that should be ignored by Git.
+
+)How do you resolve a merge conflict?
+
+A:
+	- Git marks conflicts in the affected files. You need to manually edit the files and run:
+	- git add <file>
+	- git commit -m "Resolved merge conflict"
+
+)What is git stash?
+A:
+	git stash  ->Temporarily saves changes without committing them.
+
+)How do you rename a branch?
+A:
+	git branch -m old-name new-name
+
+)What is the difference between git reset and git revert?
+A:
+	- git reset removes commits from history.
+	- git revert creates a new commit that undoes changes.
+
+)What is the difference between git fork and git clone?
+A:
+	- git fork creates a copy of a repository in another user’s GitHub account.
+	- git clone copies a repository to a local machine.
+
+
+
+	

@@ -1,0 +1,301 @@
+1).what is python ?
+
+A: 1. high level ,interpreted programming language.
+   2. it is general purpose programming language ,easy to learn syntax
+   3. its high level data strcture  -> dynamic typing and dynamic biniding.
+
+2).what is interpreted language?
+A:
+    1.excutes its statements line by line.
+     2.lang such as py,js,php,r,ruby.
+
+3).diff tuple and list and dictionary and set?
+A:
+      1.tuple and list  are both sequance data  types that can stored collection of obj in python. it's stores the diff data types.
+
+ 	tuple _                      		list__            	dictionary__						set__
+	1.()					1. []			1.{}							1.{}
+	2.imutable				2.mutable		2.mutable						2.mutable
+	3.duplicates				3.duplicates		3.stores items key -value paires.			3. no duplicate elements
+
+4). bulit in data types in python ?
+A:
+     1. None type.
+     2. Numeric     -> int,float,boolean,complex.
+     3. Sequance    -> list,tuple,range,string.
+     4. mapping type-> dictionary.
+     5.	set	    -> set,frozenset.
+
+
+*)what are the decision flow statements in python?
+A:
+	-if
+	-elif
+	-else
+	Types of decision control statements
+
+	If statement :	Executes a block of code if a condition is true
+	If-else statement :	Executes an alternate block of code if the condition in the if statement is false
+	If-elif-else ladder :	Checks for multiple conditions and runs separate code blocks based on which condition is met
+	Nested if-else statement :	Creates a hierarchy of conditions by nesting if or if-else blocks within another if or if-else block
+
+
+5). pass , continue ,break (control statements)  in python?
+A:
+    PASS: 1.it represent a null operation in python.
+	  2. used for purpose of filling the empty blocks of code.
+	  3. pass is execute nothing will be happening.
+ 
+    BREAK: 1.The break statement terminates the loop immediatly,
+	   2.And control flows to the statement after the body loop.
+ 
+    CONtINE: 1. it terminates the current iteretion of the statement
+	     2.skips the rest of the code in the cuurent iterationt
+	     3. the control flows to the iteration of the loop   z
+
+
+
+
+6). what is the use of self?
+A:
+     self is uesd to represent the instance of the class. With self key word, you can access the attributes and methods of the class in python.
+
+
+7).what is __init__?
+A:
+      1.init is a contructor method in python and is auomatically called to allocates the memory when new obj created.
+       2. all classes have a init  method associated with them.
+example program:-
+     -------------------  **** ---------------
+class Student:
+    def __init__(self, fname, lname, age, section):
+       self.firstname = fname
+       self.lastname = lname
+       self.age = age
+       self.section = section
+# creating a new object
+stu1 = Student("Sara", "Ansh", 22, "A2")
+
+ 
+ --------------------------- ***** -----------
+
+
+8).What are global, protected and private attributes in Python?
+A:
+     Global: Global variables are public variables that are defined in the global scope. To use the variable in the global scope inside a function.
+ 
+     Protected: The members of a class that are declared protected are only accessible to a class derived from it. Data members of a class are declared protected by adding a single underscore ‘_’ symbol before the data member of that class.
+
+     private: The members of a class that are declared private are accessible within the class only, private access modifier is the most secure access modifier. Data members of a class are declared private by adding a double underscore ‘__’ symbol before the data member of that class.
+
+
+
+9).What are modules and packages in Python?
+A:
+     Modules: a module is a single file containing Python code, whereas a
+     Package: package is a collection of modules that are organized in a directory hierarchy.
+
+10).What is slicing in Python?
+A:
+     2.As the name suggests, ‘slicing’ is taking parts of.
+     3.Syntax for slicing is [start : stop : step]
+     4.start is the starting index from where to slice a list or tuple
+     5.stop is the ending index or where to stop.
+     6.step is the number of steps to jump.
+     7.Default value for start is 0, stop is number of items, step is 1.
+     8.Slicing can be done on strings, arrays, lists, and tuples.
+
+11). difference  b/w list array?
+A:
+   		array___                         list__
+		1.Same data types		 1. different data types
+		2. it should be homogeneous	 2. it should be heterogeneous
+		3. less memory			 3. large memory.
+
+
+
+12).what is lamda function in python?
+A:
+	1.A lambda function is a small anonymous function.
+
+	2.A lambda function can take any number of arguments, but can only have one expression.
+
+
+
+
+ 
+13).What is PEP 8 ?
+A:     It stands for Python Enhancement Proposal
+     1.PEP 8 is a guide that helps in writing clean, consistent, and maintainable Python code that is easy to read and understand.
+     2.it specifically provides guidelines and recommendations on how to format and structure Python code to enhance readability and reliability of the code.
+
+14). What are Deep Copy and Shallow Copy ?
+A:
+
+    Shallow Copy:
+
+	-Shallow copy creates a new object and then copies the references of the original object’s elements into the new object.
+	-The new object and the original object share the same elements (references), so changes made to one object may affect the other.
+	-Shallow copies are created using methods like slicing, the `copy()` method, or the `copy` module.
+
+    Deep Copy:
+
+	-Deep copy creates a new object and recursively copies all the elements and nested objects of the original object.
+	-The new object is completely independent of the original object, and any changes made to one object do not affect the other.
+	-Deep copies are created using the `copy.deepcopy()` function from the `copy` module.
+
+
+
+15)how to handle the expection ?
+A:
+	Exception handling in Python is done using the try, except, else, and finally blocks. It is used to handle runtime errors and prevent crashes.
+
+    Example:
+	
+	Try:
+		we place the error raising code
+	except:
+		print("error")
+	finally:
+		print("done")
+
+16)  expection and error ?
+A:
+	Error:
+		An error is an issue in a program that makes it fail.
+
+		Errors usually happen because of mistakes in the code (syntax) or system-level issues.
+
+	Exception:
+
+		An exception is an event that occurs during program execution that disrupts the normal flow.
+
+		Unlike errors, exceptions can be caught and handled using try-except.
+
+
+17) which memory is used in python?
+A:
+	 Heap memory because it uses a heap data structure to allocate and deallocate memory.
+
+18) python is call by value or call by reference?
+A:
+		Python uses a model that's actually neither pure call by value nor call by reference — it's called "Call by Object Reference" (or "pass by assignment")
+
+		it depended on object type.
+	
+		- immutable types like int, str, and tuple behave like call by value — changes inside a function don't affect the original.
+		- Mutable types like list, dict, and set behave like call by reference — in-place modifications inside a function do affect the original
+
+
+          -------------------------------------------------***************************-------------------------------------------------------------------
+								OOPS Questions
+1). what is class?
+
+A:	 1. it is logical entity that contains some attributes and methods
+	 2. class is blue print and it is a collection of objects.
+
+2)  what is object?
+
+A)
+	The object is an real world entity that has a state and behavior associated with it.
+ 
+		<var_name>=<class_name>()
+
+
+3). 4 pillars of oops?
+A:
+	1. Encapsulation  -> it is a concept of wrapping the data (variables) and code acting on the data (methods) together as a single unit.
+
+	2. Inheritance    ->  To aquare the properties from to one class to another class.
+
+	3. Polymorphism    ->   poly means many and morphism means forms .it means the same function name (but different signatures) being used for different types.
+
+
+	4. Abstraction	   ->   Abstraction is the concept of hiding the complex implementation details and showing only the necessary features of the object.
+
+
+4).What is Encapsulation?
+A:
+	Encapsulation is the binding of data and methods that manipulate them into a single unit such that the sensitive data is hidden from the users.
+	
+	implement process of encapsulation:
+	1.Data hiding: A language feature to restrict access to members of an object.
+
+	2.Bundling of data and methods together: Data and methods that operate on that data are bundled together.
+
+5)What is Polymorphism?
+A:
+	1.poly means many and morphism means forms .it means the same function name (but different signatures) being used for different types.
+
+	2.python dosn't support method overloading. python support method overriding.
+
+	implementation process:
+
+    	1. duck typing
+    	2. operator overloading
+    	3. method overloading
+    	4. method overriding
+
+6)What is Inheritance? What is its purpose?
+A:
+	To aquare the properties from to one class to another class.
+	types of inheritance:
+
+
+	1. single inheritance                        (a) ->(b)
+
+	2. multiple inheritance                     (a,b)->(c)
+
+	3. hierarchical inhrtitance                   (a)->(b) (a)->(c)
+
+	4. multilevel inheritance                   [a] -> [b] -> [c]
+
+	5. hybrid heritance                         is a combination of two or more types of inheritance
+
+7)what is abstractrion?
+
+A:	1.It means showing only the necessary information and hiding the other irrelevant information from the user. Abstraction is implemented using classes and interfaces.
+	
+	2.python  by default  not support abstraction. we can achive abstraction by using abstract Base class (ABC).
+
+	implementation abstraction :
+
+		1. data abstraction
+		2. method abstraction
+		3. abstract class
+
+8)What is Constructor?
+A:
+	 constructor is a block of code that initializes the newly created object. A constructor resembles an instance method but it’s not a method as it doesn’t have a return type.
+
+
+9) What is an interface?
+A:
+
+	1.A unique class type known as an interface contains methods but not their definitions. Inside an interface, only method declaration is permitted.
+	2.You cannot make objects using an interface. Instead, you must put that interface into use and specify the procedures for doing so.
+
+10)  explain super key word in python?
+A:
+ 	1.The super() function is used to give access to methods and properties of a parent or sibling class.
+
+	2.The super() function returns an object that represents the parent class.
+
+11)What is the virtual function?
+A:
+	A virtual function is a function that is used to override a method of the parent class in the derived class. It is used to provide abstraction in a class.
+
+12) how to access the protected(__) data in encapsulation?
+A:
+	1.we can use the setter and getter methods to access the proteted data in encapsulation.
+
+13)explain magic methods in python ?
+A:
+	1.magic methods (also called dunder methods or special methods) are methods that have double underscores (__) at the beginning and end of their names.
+        2.These methods allow objects of user-defined classes to interact with built-in Python operations like arithmetic, comparisons, and string representations.
+	3. Magic methods enable the customization of behavior for various Python operations, allowing objects to act more like native types.
+
+14)What is the __del__ method in Python?
+A:
+	1.The __del__ method is a special method used for object destruction.
+	2.It is called when an object is deleted or when it goes out of scope. It allows for cleanup operations, like closing files or network connections.

@@ -1,0 +1,138 @@
+
+ ------------Machine Learning-----------------------
+
+1)What is Machine Learning?
+A:
+   Machine Learning is a branch of artificial intelligence that develops algorithms by learning the hidden patterns of the datasets used it to make predictions on new similar type data, without being explicitly programmed for each task.
+
+2)Why is the Machine Learning trend emerging so fast?
+A:
+    -Machine Learning solves Real-World problems. Unlike the hard coding rule to solve the problem, machine learning algorithms learn from the data.
+
+    -The learnings can later be used to predict the feature. It is paying off for early adopters.
+
+    -A full 82% of enterprises adopting machine learning and Artificial Intelligence (AI) have gained a significant financial advantage from their investments.
+
+3)What are Different Types of Machine Learning algorithms?
+A:
+	  supervised____                          unsupervised_____                                      Reniforcemenet_____
+	
+	1.task driven				1.data driven						1.learns to react to environment 
+	2.classification			2.clustring 						2.reward system
+	3.regression				3.segmentation						3.decision process
+	4.ranking 				4.assosiate mining					4.recommandation system
+
+
+
+4)What are different platforms for Artificial Intelligence development
+A:
+	-tenserflow
+	-keras
+	-google cloud
+	-aws 
+	-machine learning
+	-deep learning
+
+5)difference between supervised learning and supervised learning?
+A:
+
+  - supervised learning: the algorithm of supervised learning use labeled data to get trained.
+  
+  -unsupervised Learning : the algorithm of unsupervised learning use unlabeled data for  training purpose.
+
+) what are the supervised and unsupervised algorithms in ml?
+A:
+
+	Supervised Learning_____                                       Unsupervised Learning____________
+
+	1. Linear Regression					 	1. K-Means, GMM, 
+	2. Logistic Regression						2. Hierarchical Clustering
+	3. Decision Trees						3. DBSCAN
+	4. Random Forest						4. PCA
+	5. SVM								5. Apriori
+	6. KNN
+	7. Naïve Bayes
+	8. Neural Networks
+
+
+6)difference between overfitting and underfitting ?
+A:
+  - Overfitting :   Model learns both patterns and noise from training data, performing well on training data but poorly on new data.
+
+  - Underfitting :  Model is too simple to capture underlying patterns, performing poorly on both training and new data.
+
+
+7)what is Linear regression?
+A: 
+	linear regression is a supervised machine learning algorithm. It is used to find the linear relationship b/w the dependent and independent variables for pridicitive analysis.
+
+8)what is decision tree? 
+A:
+ -used to explain the sequance of actions that must be performed to get the desired o/p.
+
+9)what is clustering?
+A:
+  -clustering is a technique in unsupervised learning that involves grouping similar data points.
+
+10) what is svm?
+A:
+ -Support Vector Machine (SVM) is a powerful supervised machine learning algorithm used for both classification and regression tasks. 
+ -It is particularly well-suited for classification problems and works well with high-dimensional data.
+
+
+11)what is cross-validation in ml?
+A: 
+  cross-validation allows a system to increase the performance of the given ML algorithm.
+
+
+12)Difference Between Classification and Regression?
+A:
+  - Classification: Classification is used to predict categorical outcomes, meaning it assigns inputs into discrete classes or categories.
+
+  - Regression: Regression is used to predict continuous numerical values, meaning it estimates a numeric value based on the input data.
+
+
+13)What is a Neural Network?
+A:
+ -It is a simplified model of the human brain. Much like the brain, it has neurons that activate when encountering something similar.
+
+ -The different neurons are connected via connections that help information flow from one neuron to another.
+
+14)how to split the data in ml?
+A:
+ -Divide the dataset into training and testing sets. Often, a validation set is also used. This is crucial for evaluating the model's performance on unseen data.
+	
+	ex: from sklearn.model_selection import train_test_split
+	   
+		 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+
+
+----------------------------------------*****************************---------------------------------------------
+
+
+------------Artificial intelligence---------------------
+
+1.diff AI and ML and DL?
+A:
+ -Artificial Intelligence;
+        			
+	1.AI is the ability of machines to function like the human brain.
+	2.The goal of AI is to allow machines to think for themselves without the need for human involvement.
+	3.AI is capable of dealing with both structured and semi-structured data.
+	
+ -Machine Learning:
+
+	1.Machine learning is processing data, learning from it, and then making informed decisions
+        2.The purpose of machine learning is to allow a machine to learn from its previous experiences.   				
+	3.Machine learning works with both organized and semi-structured data.
+ -Deep Learning:
+
+	1.Deep learning uses Artificial Neural Networks to solve complex problems.
+	2.Deep learning's purpose is to use numerous algorithms to tackle complicated problems in the same way that the human brain does.
+	3.Deep learning uses both structured and unstructured data to solve problems.
+
+2.What are the programming languages used for Artificial Intelligence?
+A:
+	- Python, LISP, Java, C++, R are some of the programming languages used for Artificial Intelligence.
+
